@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-a {
-  @apply text-blue-500 hover:text-blue-400 hover:underline transition-all;
+body,
+button,
+input,
+textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container-default {
+  @apply container mx-auto max-w-[1198px];
+}
+
+.menu ul li:not(:last-child) {
+  @apply mr-[49px];
+}
+
+.link {
+  @apply text-lightgray transition-all duration-200 hover:text-white;
+}
+
+.link.active {
+  @apply border-secondary hover:text-secondary border-b-[3px] pb-[2px] font-medium text-white;
 }
