@@ -145,3 +145,11 @@ footer p,
 footer a {
   @apply mb-[19px] block text-[0.9375rem] font-light leading-[1.625rem] text-white opacity-50;
 }
+
+.social-list a:not(:last-child) {
+  @apply mr-[18px];
+}
+
+footer h3 {
+  @apply mb-[24px] text-[1.5625rem] font-bold tracking-[0.7px];
+}

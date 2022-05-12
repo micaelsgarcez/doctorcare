@@ -109,12 +109,20 @@
               </div>
             </div>
           </div>
-          <div class="block flex-1 text-right">
+          <div class="relative block flex-1 text-right">
             <img
               class="ml-auto h-auto w-full max-w-[558px]"
               src="./src/assets/create.png"
               alt=""
             />
+            <div
+              class="absolute right-[-35px] bottom-[-31px] flex h-[120px] w-[120px] cursor-default items-center justify-center overflow-hidden rounded-full border-[3px] border-dashed border-black"
+            >
+              <span
+                class="bg-lightgray absolute left-[50%] top-[50%] h-full w-full translate-y-[-50%] translate-x-[-50%] opacity-90 blur-sm"
+              ></span>
+              <span class="relative text-[2.3125rem]">$50</span>
+            </div>
           </div>
         </div>
         <div class="products bg-primary bg-opacity-[0.13]">
@@ -323,10 +331,10 @@
             treat them with care.Trees areTrees are a precious natural resource,
             and
           </p>
-          <div class="grid grid-cols-3 gap-[36px]">
+          <div class="mx-auto grid max-w-[1067px] grid-cols-3 gap-[36px]">
             <div class="item">
               <img src="./src/assets/delivery.svg" alt="" />
-              <h3>Quick Delivary</h3>
+              <h3>Quick Delivery</h3>
               <p>
                 Trees are a precious natural resource, and we must value them
                 and trethem with care.
@@ -351,17 +359,19 @@
           </div>
         </div>
       </main>
-      <footer class="text-lightgray bg-black py-[52px]">
+      <footer class="text-lightgray bg-black pt-[52px] pb-[10px]">
         <div class="container-default flex justify-between">
           <div class="mr-[170px] max-w-[253px] flex-none">
-            <h2 class="mb-[12px] text-[2.1875rem] tracking-[0.98px]">
+            <h2
+              class="mb-[12px] text-[2.1875rem] font-bold tracking-[0.98px] text-white"
+            >
               BD.Travel
             </h2>
             <p>
               HUMAN beings tend to take their five basic senses pretty much for
               granted. ...
             </p>
-            <div class="flex items-center">
+            <div class="social-list flex items-center">
               <a href="#"><img src="./src/assets/facebook.svg" alt="" /></a>
               <a href="#"><img src="./src/assets/twitter.svg" alt="" /></a>
               <a href="#"><img src="./src/assets/linkedin.svg" alt="" /></a>
@@ -408,6 +418,15 @@
           </div>
         </div>
       </footer>
+      <div class="bg-black">
+        <div
+          class="container-default flex items-center justify-center border-t border-white py-[22px] text-center text-white"
+        >
+          <p class="font-light tracking-[0.42px] opacity-50">
+            2021, All rights powered by Beauty
+          </p>
+        </div>
+      </div>
     </div>
     <script type="module" src="./src/main.js"></script>
   </body>
