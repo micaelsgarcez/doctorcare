@@ -16,12 +16,24 @@
   <body>
     <div id="app" class="min-h-screen">
       <header class="bg-primary text-white">
-        <nav class="container-default mb-[76px] flex items-center pt-[44px]">
+        <nav
+          class="container-default mb-[5.9375vw] flex items-center pt-5 lg:pt-[44px]"
+        >
           <div class="logo mr-[93.5px]">
             <p class="text-4xl font-medium">Plant</p>
           </div>
-          <div class="menu">
-            <ul class="flex items-center">
+          <button type="button" class="btn-open-menu ml-auto lg:hidden">
+            <img src="./src/assets/menu.svg" alt="Icone de Menu" />
+          </button>
+          <div
+            class="menu fixed top-0 left-[100%] z-50 h-screen w-full bg-primary p-4 transition-all duration-200 lg:relative lg:left-0 lg:h-auto lg:p-0"
+          >
+            <div class="mb-5 flex justify-end lg:hidden">
+              <button type="button" class="btn-close-menu inline-block">
+                <img src="./src/assets/close.svg" alt="Icone de Fechar" />
+              </button>
+            </div>
+            <ul class="flex flex-col items-start lg:flex-row lg:items-center">
               <li>
                 <a class="link active" href="#">Home</a>
               </li>
@@ -36,40 +48,40 @@
               </li>
             </ul>
           </div>
-          <div class="button-container ml-auto flex items-center">
+          <div class="button-container ml-auto hidden items-center lg:flex">
             <button type="button" class="mr-[51.4px]">
               <img src="./src/assets/search.svg" alt="Imagem de uma Lupa" />
             </button>
             <a href="#" class="button button-outline">Login</a>
           </div>
         </nav>
-        <div class="hero container-default flex pb-[85px]">
+        <div
+          class="hero container-default flex flex-col-reverse pb-10 lg:flex-row lg:pb-[85px]"
+        >
           <div class="flex-1">
             <h1
-              class="mb-[15px] max-w-[520px] text-[75px] font-medium leading-[90px]"
+              class="mb-[15px] mt-5 w-full max-w-[520px] text-4xl font-medium leading-relaxed lg:mt-0 lg:text-[4.6875rem] lg:leading-[5.625rem]"
             >
               Grow plants, save the environment
             </h1>
-            <p class="mb-[64px] leading-[38px] text-white opacity-[0.61]">
+            <p
+              class="mb-5 leading-relaxed text-white opacity-[0.61] lg:mb-[64px] lg:leading-[38px]"
+            >
               Trees are a precious natural resource, and we must value them and
               treat them with care. Trees are a precious natural resource, and
               we must Trees are a precious natural resource,
             </p>
             <a class="button" href="#">Get Started</a>
           </div>
-          <div class="relative flex flex-1 justify-end">
+          <div class="relative flex flex-1 justify-center md:justify-end">
             <img
               src="./src/assets/hero.png"
               alt="Imagem do canto de uma sala com dois vazos de plantas próximos"
             />
-            <div
-              class="absolute right-[-35px] bottom-[-31px] flex h-[120px] w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-full border-[3px] border-dashed border-black"
-            >
-              <span
-                class="bg-lightgray absolute left-[50%] top-[50%] h-full w-full translate-y-[-50%] translate-x-[-50%] opacity-90 blur-sm"
-              ></span>
+            <div class="circle-dotted">
+              <span></span>
               <img
-                class="relative pl-2"
+                class="relative w-8 pl-2 lg:w-10"
                 src="./src/assets/play.svg"
                 alt="Icone de Play"
               />
@@ -78,14 +90,16 @@
         </div>
       </header>
       <main>
-        <div class="create container-default flex pt-[120px] pb-[81px]">
+        <div
+          class="create container-default flex flex-col-reverse pt-10 pb-10 lg:flex-row lg:pb-[81px] lg:pt-[120px]"
+        >
           <div class="flex-1">
             <h2
-              class="mb-[20px] max-w-[399px] text-[55px] font-medium leading-[75px] tracking-[1.54px]"
+              class="mt-5 mb-[20px] max-w-[399px] text-3xl font-medium leading-relaxed tracking-[1.54px] lg:text-[55px] lg:leading-[75px]"
             >
               Create Any Thing By Your Style
             </h2>
-            <p class="mb-[54px] max-w-[562px] leading-[33px]">
+            <p class="mb-5 max-w-[562px] leading-[33px] lg:mb-[54px]">
               Trees are a precious natural resource, and we must value them and
               treat them with care.Trees are a precious natural resource, and we
               must value them and treat them with care.Trees are
@@ -94,7 +108,9 @@
             <h3 class="mb-[26px] text-[25px] font-medium leading-[33px]">
               See Our Newest Plants
             </h3>
-            <div class="flex max-w-[562px] items-center justify-between">
+            <div
+              class="grid w-full max-w-[280px] grid-cols-2 items-center justify-between gap-5 lg:flex lg:max-w-[562px]"
+            >
               <div class="item-newest">
                 <img src="./src/assets/newest-1.png" alt="" />
               </div>
@@ -115,31 +131,31 @@
               src="./src/assets/create.png"
               alt=""
             />
-            <div
-              class="absolute right-[-35px] bottom-[-31px] flex h-[120px] w-[120px] cursor-default items-center justify-center overflow-hidden rounded-full border-[3px] border-dashed border-black"
-            >
-              <span
-                class="bg-lightgray absolute left-[50%] top-[50%] h-full w-full translate-y-[-50%] translate-x-[-50%] opacity-90 blur-sm"
-              ></span>
-              <span class="relative text-[2.3125rem]">$50</span>
+            <div class="circle-dotted">
+              <span></span>
+              <span class="relative z-10 text-base lg:text-[2.3125rem]"
+                >$50</span
+              >
             </div>
           </div>
         </div>
         <div class="products bg-primary bg-opacity-[0.13]">
-          <div class="container-default py-[122px]">
+          <div class="container-default py-10 lg:py-[122px]">
             <h2
-              class="mb-[17px] text-center text-[65px] font-medium tracking-[1.3px]"
+              class="mb-[17px] text-center text-[65px] font-medium leading-none tracking-[1.3px] lg:leading-relaxed"
             >
               Our Product
             </h2>
             <p
-              class="mx-auto mb-[69px] max-w-[734px] text-center opacity-[0.61]"
+              class="mx-auto mb-5 max-w-[734px] text-center opacity-[0.61] lg:mb-[69px]"
             >
               Trees are a precious natural resource, and we must value them and
               treat them with care.Trees areTrees are a precious natural
               resource,
             </p>
-            <div class="grid grid-cols-3 gap-[43px]">
+            <div
+              class="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-[43px]"
+            >
               <div class="product">
                 <div class="image">
                   <button class="wishlist" type="button">
@@ -294,10 +310,12 @@
           </div>
         </div>
         <div
-          class="newsletter container-default pt-[110px] pb-[95px] text-center text-white"
+          class="newsletter container-default py-10 text-center text-white lg:pt-[110px] lg:pb-[95px]"
         >
-          <div>
-            <h2 class="mb-[18px] text-[65px] font-medium leading-[98px]">
+          <div class="px-2">
+            <h2
+              class="mb-[18px] text-4xl font-medium leading-relaxed lg:text-[4.0625rem] lg:leading-[6.125rem]"
+            >
               Our Newsletter and Our Offers
             </h2>
             <p class="mx-auto mb-[54px] max-w-[606px] leading-[33px]">
@@ -305,16 +323,16 @@
               treat them with care.Trees are
             </p>
             <form
-              class="mx-auto flex h-[60px] w-full max-w-[537px] items-center"
+              class="mx-auto flex h-[140px] w-full max-w-[537px] flex-col items-center justify-between lg:h-[60px] lg:flex-row"
             >
               <input
-                class="border-secondary h-full flex-1 rounded-l-[15px] border-2 bg-transparent px-4"
+                class="h-[60px] w-full flex-none rounded-[15px] border-2 border-secondary bg-transparent px-4 lg:flex-1 lg:rounded-l-[15px] lg:rounded-r-[0px]"
                 type="email"
                 name="email"
                 placeholder="Enter Your Email"
               />
               <button
-                class="bg-secondary border-secondary h-full w-[138px] flex-none rounded-r-[15px] border-2 font-semibold text-black"
+                class="h-[60px] w-[138px] flex-none rounded-[15px] border-2 border-secondary bg-secondary font-semibold text-black lg:rounded-r-[15px] lg:rounded-l-[0px]"
                 type="submit"
               >
                 Send
@@ -323,15 +341,21 @@
           </div>
         </div>
         <div class="everything container-default pb-[110px]">
-          <h2 class="mb-[17px] text-center text-[65px] font-bold">
+          <h2
+            class="mb-[17px] text-center text-4xl font-bold lg:text-[4.0625rem]"
+          >
             Everything For you
           </h2>
-          <p class="mx-auto mb-[69px] max-w-[732px] text-center opacity-[0.61]">
+          <p
+            class="mx-auto mb-5 max-w-[732px] text-center opacity-[0.61] lg:mb-[69px]"
+          >
             Trees are a precious natural resource, and we must value them and
             treat them with care.Trees areTrees are a precious natural resource,
             and
           </p>
-          <div class="mx-auto grid max-w-[1067px] grid-cols-3 gap-[36px]">
+          <div
+            class="mx-auto grid max-w-[1067px] grid-cols-1 gap-[36px] md:grid-cols-2 lg:grid-cols-3"
+          >
             <div class="item">
               <img src="./src/assets/delivery.svg" alt="" />
               <h3>Quick Delivery</h3>
@@ -359,8 +383,10 @@
           </div>
         </div>
       </main>
-      <footer class="text-lightgray bg-black pt-[52px] pb-[10px]">
-        <div class="container-default flex justify-between">
+      <footer class="bg-black pt-[52px] pb-[10px] text-lightgray">
+        <div
+          class="container-default flex flex-col justify-between lg:flex-row"
+        >
           <div class="mr-[170px] max-w-[253px] flex-none">
             <h2
               class="mb-[12px] text-[2.1875rem] font-bold tracking-[0.98px] text-white"
@@ -378,7 +404,9 @@
               <a href="#"><img src="./src/assets/instagram.svg" alt="" /></a>
             </div>
           </div>
-          <div class="grid flex-1 grid-cols-4 gap-[100px]">
+          <div
+            class="mt-10 grid flex-1 grid-cols-1 gap-10 lg:mt-0 lg:grid-cols-4 lg:gap-[100px]"
+          >
             <div>
               <h3>About</h3>
               <ul>
